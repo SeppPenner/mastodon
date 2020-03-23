@@ -6,14 +6,14 @@ ruby '>= 2.4.0', '< 2.7.0'
 gem 'pkg-config', '~> 1.3'
 
 gem 'puma', '~> 4.0'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 gem 'thor', '~> 0.20'
 
-gem 'hamlit-rails', '~> 0.2'
+gem 'hamlit-rails', '~> 0.2', '>= 0.2.3'
 gem 'pg', '~> 1.1'
 gem 'makara', '~> 0.4'
 gem 'pghero', '~> 2.2'
-gem 'dotenv-rails', '~> 2.7'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.4'
 
 gem 'aws-sdk-s3', '~> 1.45', require: false
 gem 'fog-core', '<= 2.1.0'
@@ -23,7 +23,7 @@ gem 'paperclip-av-transcoder', '~> 0.6'
 gem 'streamio-ffmpeg', '~> 3.0'
 gem 'blurhash', '~> 0.1'
 
-gem 'active_model_serializers', '~> 0.10'
+gem 'active_model_serializers', '~> 0.10', '>= 0.10.10'
 gem 'addressable', '~> 2.6'
 gem 'bootsnap', '~> 1.4', require: false
 gem 'browser'
@@ -31,11 +31,11 @@ gem 'charlock_holmes', '~> 0.7.6'
 gem 'iso-639'
 gem 'chewy', '~> 5.0'
 gem 'cld3', '~> 3.2.4'
-gem 'devise', '~> 4.6'
-gem 'devise-two-factor', '~> 3.0'
+gem 'devise', '~> 4.6', '>= 4.6.2'
+gem 'devise-two-factor', '~> 3.0', '>= 3.0.3'
 
 group :pam_authentication, optional: true do
-  gem 'devise_pam_authenticatable2', '~> 9.2'
+  gem 'devise_pam_authenticatable2', '~> 9.2', '>= 9.2.0'
 end
 
 gem 'net-ldap', '~> 0.10'
@@ -43,7 +43,7 @@ gem 'omniauth-cas', '~> 1.1'
 gem 'omniauth-saml', '~> 1.10'
 gem 'omniauth', '~> 1.9'
 
-gem 'doorkeeper', '~> 5.1'
+gem 'doorkeeper', '~> 5.1', '>= 5.1.0'
 gem 'fast_blank', '~> 1.0'
 gem 'fastimage'
 gem 'goldfinger', '~> 2.1'
@@ -55,7 +55,7 @@ gem 'http_accept_language', '~> 2.1'
 gem 'http_parser.rb', '~> 0.6', git: 'https://github.com/tmm1/http_parser.rb', ref: '54b17ba8c7d8d20a16dfc65d1775241833219cf2'
 gem 'httplog', '~> 1.3'
 gem 'idn-ruby', require: 'idn'
-gem 'kaminari', '~> 1.1'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'link_header', '~> 0.0'
 gem 'mime-types', '~> 3.2', require: 'mime/types/columnar'
 gem 'nilsimsa', git: 'https://github.com/witgo/nilsimsa', ref: 'fd184883048b922b176939f851338d0a4971a532'
@@ -67,11 +67,11 @@ gem 'ox', '~> 2.11'
 gem 'parslet'
 gem 'posix-spawn', git: 'https://github.com/rtomayko/posix-spawn', ref: '58465d2e213991f8afb13b984854a49fcdcc980c'
 gem 'pundit', '~> 2.0'
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.10.3'
 gem 'rack-attack', '~> 6.1'
 gem 'rack-cors', '~> 1.0', require: 'rack/cors'
-gem 'rails-i18n', '~> 5.1'
-gem 'rails-settings-cached', '~> 0.6'
+gem 'rails-i18n', '~> 5.1', '>= 5.1.3'
+gem 'rails-settings-cached', '~> 0.6', '>= 0.6.6'
 gem 'redis', '~> 4.1', require: ['redis', 'redis/connection/hiredis']
 gem 'mario-redis-lock', '~> 1.2', require: 'redis_lock'
 gem 'rqrcode', '~> 0.10'
@@ -81,15 +81,15 @@ gem 'sidekiq-scheduler', '~> 3.0'
 gem 'sidekiq-unique-jobs', '~> 6.0'
 gem 'sidekiq-bulk', '~>0.2.0'
 gem 'simple-navigation', '~> 4.0'
-gem 'simple_form', '~> 4.1'
-gem 'sprockets-rails', '~> 3.2', require: 'sprockets/railtie'
+gem 'simple_form', '~> 4.1', '>= 4.1.0'
+gem 'sprockets-rails', '3.2.1'
 gem 'stoplight', '~> 2.1.3'
 gem 'strong_migrations', '~> 0.4'
 gem 'tty-command', '~> 0.8', require: false
 gem 'tty-prompt', '~> 0.19', require: false
 gem 'twitter-text', '~> 1.14'
 gem 'tzinfo-data', '~> 1.2019'
-gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 4.0', '>= 4.0.7'
 gem 'webpush'
 
 gem 'json-ld', git: 'https://github.com/ruby-rdf/json-ld.git', ref: '345b7a5733308af827e8491d284dbafa9128d7a2'
@@ -99,10 +99,10 @@ gem 'rdf-normalize', '~> 0.3'
 group :development, :test do
   gem 'fabrication', '~> 2.20'
   gem 'fuubar', '~> 2.4'
-  gem 'i18n-tasks', '~> 0.9', require: false
+  gem 'i18n-tasks', '~> 0.9', '>= 0.9.29', require: false
   gem 'pry-byebug', '~> 3.7'
   gem 'pry-rails', '~> 0.3'
-  gem 'rspec-rails', '~> 3.8'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
 end
 
 group :production, :test do
@@ -114,7 +114,7 @@ group :test do
   gem 'climate_control', '~> 0.2'
   gem 'faker', '~> 1.9'
   gem 'microformats', '~> 4.1'
-  gem 'rails-controller-testing', '~> 1.0'
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
   gem 'rspec-sidekiq', '~> 3.0'
   gem 'simplecov', '~> 0.17', require: false
   gem 'webmock', '~> 3.6'
@@ -128,7 +128,7 @@ group :development do
   gem 'binding_of_caller', '~> 0.7'
   gem 'bullet', '~> 6.0'
   gem 'letter_opener', '~> 1.7'
-  gem 'letter_opener_web', '~> 1.3'
+  gem 'letter_opener_web', '~> 1.3', '>= 1.3.4'
   gem 'memory_profiler'
   gem 'rubocop', '~> 0.73', require: false
   gem 'rubocop-rails', '~> 2.2', require: false
@@ -145,8 +145,8 @@ group :development do
 end
 
 group :production do
-  gem 'lograge', '~> 0.11'
-  gem 'redis-rails', '~> 5.0'
+  gem 'lograge', '~> 0.11', '>= 0.11.2'
+  gem 'redis-rails', '~> 5.0', '>= 5.0.2'
 end
 
 gem 'concurrent-ruby', require: false
